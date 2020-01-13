@@ -10,7 +10,7 @@ import (
 	"log"
 	"strings"
 
-	"github.com/tidwall/evio"
+	"github.com/oscarmherrera/evio"
 )
 
 func main() {

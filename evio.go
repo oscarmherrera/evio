@@ -62,8 +62,8 @@ type Conn interface {
 	RemoteAddr() net.Addr
 	// Wake triggers a Data event for this connection.
 	Wake()
-	// GetConn returns the native network connection
-	GetConn() net.Conn
+	// Write to the remoteAdd socket
+	Write(p []byte) (n int, err error)
 }
 
 // LoadBalance sets the load balancing method.
